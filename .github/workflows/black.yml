@@ -10,4 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Black Check
-      uses: jpetrucciani/black-check@19.10b0
+      uses: "lgeiger/black-action@master"
+      with:
+        args: ". --check"
